@@ -1,0 +1,41 @@
+{
+  "name": "tickr",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A real-time trading terminal: live WebSocket prices, watchlist, candlestick chart, order ticket, positions and an option chain.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "dev:ws": "vite --mode ws",
+    "server": "tsx server/feed-server.ts",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "lightweight-charts": "^4.2.3",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0"
+  },
+  "devDependencies": {
+    "@testing-library/dom": "^10.4.2",
+    "@testing-library/react": "^16.3.3",
+    "@testing-library/user-event": "^14.6.7",
+    "@types/node": "^26.6.4",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@types/ws": "^8.18.2",
+    "@vitejs/plugin-react": "^6.1.2",
+    "jsdom": "^29.1.1",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.4",
+    "vitest": "^5.0.3",
+    "ws": "^8.22.0"
+  },
+  "allowScripts": {
+    "esbuild@0.28.2": true
+  }
+}
